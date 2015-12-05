@@ -1,0 +1,21 @@
+/* CSS declarations go here */
+
+body {
+   background: url("https://drscdn.500px.org/photo/99564077/m%3D2048/10c2a2c4b75b9fd4e018ea9e1c5cf50a" );
+   background-repeat:no-repeat;
+   text-align: center;
+   background-size: 100%;
+   color: #E48221;
+}
+._mainTitle{
+
+
+}
+
+._contenderInput{
+ width:300px;
+}
+
+._contenderBox{
+  margin : 20px;
+}

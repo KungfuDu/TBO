@@ -1,0 +1,31 @@
+<head>
+  <title>Sweg</title>
+  <link rel="stylesheet" href="new.css" media="screen" title="no title" charset="utf-8">
+
+
+</head>
+
+<body>
+  <h1 class="_mainTitle">Qui est le plus beau ? </h1>
+  {{> newContenderForm}}
+  {{> contenders}}
+
+
+</body>
+
+<template name="contenders">
+  {{#each contenders}}
+  <div class="_contenderBox">
+    <button class="_btnContenders btn" > {{name}}  : {{score}} point(s) ! </button>
+  </div>
+  {{/each}}
+</template>
+
+<template name="newContenderForm">
+  <div class="_NewContenderBox">
+    <form id="newContenderForm" class="_NewContenderForm form-group"  method="post">
+        <input id="contenderInput" type="text" class="_contenderInput" name="contenderName" value="" placeholder="Balance le nom de ton gosse beau">
+        <button class="btn" type="submit" > Ajoute ton gangsta </button>
+    </form>
+  </div>
+</template>
